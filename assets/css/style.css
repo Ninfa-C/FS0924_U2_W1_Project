@@ -97,15 +97,16 @@ nav ul li:last-child.btnScrolled {
   color: white;
 }
 
+
 main > *:not(.topBanner) {
   padding: 0 10vw;
 }
 .firstSection {
-  height: 48vh;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
   border-bottom: rgb(230, 230, 230) 1px solid;
+  padding: 2em 10vh;
 }
 section:first-of-type div {
   display: flex;
