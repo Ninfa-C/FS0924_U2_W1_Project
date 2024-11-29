@@ -276,9 +276,13 @@ aside ul li {
 /*query 768*/
 
 @media screen and (max-width: 767px) {
-  .container {
-    overflow: hidden;
-  }
+
+
+header{
+    position: sticky;
+    top:0
+}
+
   header,
   main > *:not(.topBanner) {
     padding: 0 5vw;
@@ -340,6 +344,7 @@ aside ul li {
     order: -1;
     height: auto;
     width: 100%;
+    position:static ;
   }
 
   .secondSection section {
