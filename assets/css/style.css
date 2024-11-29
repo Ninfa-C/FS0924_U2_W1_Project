@@ -50,7 +50,7 @@ nav ul li:last-child{
     cursor: pointer;
 }
 
-main > .topBanner {
+.topBanner {
     box-sizing: border-box;
     height:70vh;
     display: flex;
@@ -270,4 +270,92 @@ aside ul{
 aside ul li {
 padding-left: 2em;
 margin-bottom: 0.5em;
+}
+
+
+/*query 768*/
+
+@media screen and (max-width:767px) {
+    
+.container{
+    overflow: hidden;
+}
+header, main > *:not(.topBanner){
+    padding: 0 5vw;
+}
+nav {
+    width: 68%;
+}
+nav ul li{
+    font-size: 0.8rem;
+}
+
+.topBanner{
+    padding-left: 5vw;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2em;
+    
+}
+
+h1{
+    font-size: 5em;
+    font-weight: 500;
+}
+.title{
+    width: 60%;
+}
+
+.title p{
+    font-size: 1.3em;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 2.5em;
+}
+#mContainer {
+    overflow: hidden;
+    width: 75%;
+    position: absolute;
+    left: 450px;
+    }
+.firstSection{
+    height: auto;
+}
+    .trendingCard{
+        flex-basis: 50%;
+    }
+.trendingCard{
+    margin-bottom: 2.5em;
+}
+
+.secondSection{
+    flex-direction: column;
+    margin-top: 1.5em;
+}
+
+.secondSection aside{
+    order: -1;
+    height: auto;
+    width: 100%;
+}
+
+.secondSection section{
+    width: 100%;
+}
+.articlePreview{
+    width: 70%;
+
+}
+.img {
+    width: 30%;
+    margin-left: 2em;
+    height: 30%;
+}
+article .img img {
+margin-left: 0;
+}
+
+
 }
